@@ -1,0 +1,17 @@
+
+<h1>Welcome to Completionator</h2>
+<h2>Track, store and find your entire game collection all in one place</h2>
+
+<!-- Main menu -->
+<li>
+  <ul>Home</ul>
+  <ul>Latest releases</ul>
+  <ul>My collection</ul>
+
+
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for a game") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
